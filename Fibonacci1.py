@@ -4,7 +4,7 @@ def fibonacci1(n):
     nAureo=(1+sqrt(5))/2
     nAureoPrimo=(1-sqrt(5))/2
 
-    return ((nAureo**n-nAureoPrimo**2)/sqrt(5))
+    return ((nAureo**n-nAureoPrimo**n)/sqrt(5))
 
 
 

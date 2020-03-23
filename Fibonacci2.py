@@ -9,4 +9,4 @@ def fibonacci2(n):
 
 
 n=int(input("Inserisci n: "))
-print("Fibonacci 1:", fibonacci2(n))
+print("Fibonacci 2:", fibonacci2(n))
