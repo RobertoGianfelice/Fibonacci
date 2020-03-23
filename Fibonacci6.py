@@ -1,7 +1,11 @@
 from math import *
 m=[[1,1],[1,0]]
+invProd=0
+invPot=0
 
 def prodotto(m1,m2):
+   global invProd
+   invProd+=1
    n=len(m1)
    mm=[[0,0],[0,0]]
    for r in range(n):
@@ -13,6 +17,8 @@ def prodotto(m1,m2):
    return mm
 
 def potenzaDiMatrice(A,n):
+    global invPot
+    invPot+=1
     if (n<=1):
         M=[[1,0],[0,1]]
     else:
@@ -25,3 +31,4 @@ def potenzaDiMatrice(A,n):
 n=int(input("Inserisci n: "))
 R=potenzaDiMatrice(m,n-1)
 print("Fibonacci 6:", R[0][0])
+print("Invocazioni prodotto={}, invocazioni Potenza= {}".format(invPot, invProd))
